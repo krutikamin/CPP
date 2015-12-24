@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------//
-//	Name -		problem-5.cpp								//
+//	Name -		problem-7.cpp								//
 //	Description -	Write a c++ programme that prints out "C S !" in large block letters	// 
 //			inside a border of *s followed by two lines then the message Computer	//
 //			Computer Science is Cool Stuff						//
