@@ -34,7 +34,6 @@ int main(void)
 
 	cout << "Press any key to continue...";
 	cin.get();
-	getchar();
 
 	return 0;
 }
