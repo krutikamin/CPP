@@ -2,6 +2,11 @@
 using namespace std;
 
 int main (void) {
-	cout << !44 << endl;
+	int *ptr = NULL;
+	
+	cout << ptr << endl;
+	ptr++;
+	cout << ptr << endl;
+	cout << *ptr << endl;
 	return 0;
 }

@@ -1,4 +1,4 @@
-//https://www.tutorialspoint.com/cplusplus/cpp_return_arrays_from_functions.htm
+// https://www.tutorialspoint.com/cplusplus/cpp_return_pointer_from_functions.htm
 
 #include <iostream>
 #include <ctime>
@@ -12,25 +12,25 @@ int *getRandom() {
 
 	// set the seed
 	srand((unsigned)time(NULL));
-
-	for (int i = 0; i < 10; i++) {
+		
+	for(int i = 0; i < 10; ++i) {
 		r[i] = rand();
 		cout << r[i] << endl;
 	}
-
+	
 	return r;
 }
 
 // main function to call above defined function.
-int main (void) {
+int main(void) {
 	// a pointer to an int.
 	int *p;
 
 	p = getRandom();
 
-	for (int i = 0; i < 10; i++) {
-		cout << "*(p + " << i << ") : ";
-		cout << *(p + 1) << endl;
+	for(int i = 0; i < 10; i++) {
+		cout << "*p + " << i << ") : ";
+		cout << *(p + i) << endl;
 	}
 
 	return 0;
