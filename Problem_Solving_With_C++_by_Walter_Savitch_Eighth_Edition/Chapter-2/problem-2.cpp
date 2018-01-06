@@ -17,7 +17,7 @@
 // 			often as the user wishes.						//
 //	Created -	01/05/2018								//
 //	Last Modified -	01/05/2018								//
-//	Errors -	None									//
+//	Errors -	None to compile. Likely contains logic error.				//
 //	Sample Run -	Just run and see.							//
 //----------------------------------------------------------------------------------------------//
 
@@ -51,7 +51,7 @@ int main(void)
 		cout << endl;
 		targetWeight *= 1000;	// Convert the weight to grams
 		weightOfSweetenerToKillPerson = (targetWeight * weightOfSweetenerToKillMouse) / mouseWeight;
-		weightOfSoda = weightOfSweetenerToKillPerson * DEATH;
+		weightOfSoda = weightOfSweetenerToKillPerson * 1000;
 
 		cout << "\nAmount of soda in grams is - " << weightOfSoda << " grams\n"
 		     << "and in kilograms is - " << weightOfSoda / 1000 << " kgs\n";
