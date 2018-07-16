@@ -50,7 +50,11 @@ int main(void)
 		cin >> targetWeight;
 		cout << endl;
 		targetWeight *= 1000;	// Convert the weight to grams
+		//If weightOfSweetenerToKillMouse grams of artificial sweetener can kill the mouse of mouseWeight
+		//grams then how many grams of artificial sweetener needed to kill a person of targerWeight
 		weightOfSweetenerToKillPerson = (targetWeight * weightOfSweetenerToKillMouse) / mouseWeight;
+		// 100 grams of soda contains 1/10 of 1% so 0.001 gram of artificial sweetener, so how many
+		// grams of soda contains weightOfSweetenerToKillPerson of artificial sweetener
 		weightOfSoda = weightOfSweetenerToKillPerson * 1000;
 
 		cout << "\nAmount of soda in grams is - " << weightOfSoda << " grams\n"
