@@ -21,7 +21,7 @@
 //			to be repeated as often as the user wishes.				//
 //	Created -	01/12/2018								//
 //	Last Modified -	01/12/2018								//
-//	Errors -	None									//
+//	Errors -	Incorrect output							//
 //----------------------------------------------------------------------------------------------//
 
 #include <iostream>
