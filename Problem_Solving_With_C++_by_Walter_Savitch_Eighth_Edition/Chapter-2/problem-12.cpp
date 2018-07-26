@@ -10,9 +10,9 @@
 //			   square root of n.							//
 //			Write a program that inputs an integer for n, iterates through the	//
 //			Babylonian algorithm until guess is within 1% of the previous guess,	//
-//			and outputs the answer as a double.
+//			and outputs the answer as a double.					//
 //	Created -	07/17/2018								//
-//	Last Modified -	07/17/2018								//
+//	Last Modified -	07/25/2018								//
 //	Errors -	None									//
 //	Sample Run -										//
 //----------------------------------------------------------------------------------------------//
@@ -22,7 +22,33 @@ using namespace std;
 
 int main(void)
 {
+	double	oldGuess;
+	double	newGuess;
+	double	r;
+	int	n;
 
+	cout << "Enter an integer - ";
+	cin >> n;
+
+	oldGuess = n/2;
+
+	while(1)
+	{
+		r = n/oldGuess;
+		newGuess = (oldGuess + r) / 2;
+		//cout << "oldGuess = " << oldGuess << endl;
+		//cout << "newGuess = " << newGuess << endl;
+
+		if((((newGuess - oldGuess) / ((newGuess + oldGuess) / 2)) * 100) < 1)
+		{
+			cout << newGuess << endl;
+			break;
+		}
+		else
+		{
+			oldGuess = newGuess;
+		}
+	}
 	
 	return 0;
 }
